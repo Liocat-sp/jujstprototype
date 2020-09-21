@@ -7,9 +7,10 @@ import Content from './Components/Content/Content';
 import Subscribe from "./Components/Subscribe/Subscribe";
 import ContactUs from "./Components/ContactUs/ContactUs";
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Navbar />
       <Headers />
       <AboutUs />

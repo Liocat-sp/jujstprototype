@@ -105,14 +105,14 @@ const ContactUs = () => {
     return (
         <Container maxWidth="xl" className={classes.sectionContent}>
             <Grid container alignItems="center" justify="center">
-                <Grid item container alignItems="center" lg={11} xl={11} style={{ marginBottom: "2rem" }}>
-                    <Grid item lg={12} xl={11} style={{ width: "100%" }}>
+                <Grid item container alignItems="center" lg={11} xl={12} style={{ marginBottom: "2rem" }}>
+                    <Grid item lg={12} xl={12} style={{ width: "100%" }}>
                         <Typography variant="h4" className={classes.SectionTitle} align="center">
                             Be Unstoppable
                         </Typography>
                     </Grid>
-                    <Grid container item justify="space-around" lg={12} xl={11}>
-                        <Grid item container justify="space-around" lg={12} xl={11} spacing={4} className={classes.joinUsGrid}>
+                    <Grid container item justify="space-around" lg={12} xl={12}>
+                        <Grid item container justify="space-around" lg={12} xl={12} spacing={4} className={classes.joinUsGrid}>
                             <Grid container item justify="center" xs={11} lg={3} className={classes.JoinUsCard} >
                                 <Paper className={classes.PaperStyle} >
                                     <div className={classes.cardIcon}>
