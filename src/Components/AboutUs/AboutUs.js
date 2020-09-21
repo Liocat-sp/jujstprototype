@@ -4,8 +4,6 @@ import Container from "@material-ui/core/Container";
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
 
 const useStyle = makeStyles(theme => ({
     sectionContent: {
@@ -54,19 +52,19 @@ const AboutUs = () => {
                         </Typography>
                     </Grid>
                     <Grid container item justify="space-around" lg={12} xl={11}>
-                        <Grid item lg={5} xl={6} className={classes.paddingtop}>
-                            <Typography variant="h5" className={classes.AboutusTitle}>
+                        <Grid item lg={11} xl={11} className={classes.paddingtop}>
+                            <Typography variant="h5" className={classes.AboutusTitle} align="center">
                                 In Short,We Keep People Up to Date.
                             </Typography>
-                            <Typography variant="subtitle2" className={classes.AboutusSubTitle}>
+                            <Typography variant="subtitle2" className={classes.AboutusSubTitle} align="center">
                                 LoreCulpa Lorem pariatur esse officia laborum et. Aliqua ut aute cupidatat laborum duis adipisicing sit. Aliqua veniam non enim deserunt nisi duis non magna cupidatat. Laboris pariatur consequat proident eiusmod culpa reprehenderit. Enim ullamco do eiusmod exercitation.
                             </Typography>
                         </Grid>
-                        <Grid item lg={5} xl={6}>
+                        {/* <Grid item lg={5} xl={6}>
                             <Typography variant="h1" className={classes.AboutUsImage} style={{ fontWeight: "500" }}>
                                 What we Do
                             </Typography>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
             </Grid>

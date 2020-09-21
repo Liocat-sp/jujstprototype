@@ -56,11 +56,11 @@ const useStyle = makeStyles(theme => ({
     },
     StepsSubscribe: {
         color: "#848484",
-        marginBottom: "1rem",
+        marginTop:  "1.5rem",
+        marginBottom: "1.5rem",
         fontWeight: "500"
     },
     buttonStyle: {
-        marginBottom: "2rem",
         fontSize: "1.2rem",
         borderRadius: "10px",
         backgroundColor: "#80CC1B",
@@ -128,7 +128,7 @@ const Subscribe = () => {
                         </Grid>
                     </Grid>
                     <Grid>
-                        <Typography variant="h5" className={classes.StepsSubscribe}>
+                        <Typography variant="h5" className={classes.StepsSubscribe} align="center">
                             So, What Are You Waiting For, Subscribe now.
                         </Typography>
                         <Grid container justify="center">
