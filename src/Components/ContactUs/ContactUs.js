@@ -113,7 +113,7 @@ const ContactUs = () => {
                     </Grid>
                     <Grid container item justify="space-around" lg={12} xl={12}>
                         <Grid item container justify="space-around" lg={12} xl={12} spacing={4} className={classes.joinUsGrid}>
-                            <Grid container item justify="center" xs={11} lg={3} className={classes.JoinUsCard} >
+                            <Grid container item justify="center" xs={11} sm={5} md={4} lg={3} className={classes.JoinUsCard} >
                                 <Paper className={classes.PaperStyle} >
                                     <div className={classes.cardIcon}>
                                         <img src={Student} alt="Campus Ambasador" className={classes.Icon} />
@@ -126,7 +126,7 @@ const ContactUs = () => {
                                     </Typography>
                                 </Paper>
                             </Grid>
-                            <Grid container item justify="center" xs={11} lg={3} className={classes.JoinUsCard}>
+                            <Grid container item justify="center" xs={11} sm={5} md={4} lg={3} className={classes.JoinUsCard}>
                                 <Paper className={classes.PaperStyle} >
                                     <div className={classes.cardIcon}>
                                         <img src={Write} alt="Campus Ambasador" className={classes.Icon} />
@@ -139,7 +139,7 @@ const ContactUs = () => {
                                     </Typography>
                                 </Paper>
                             </Grid>
-                            <Grid item container justify="center" xs={11} lg={3} className={classes.JoinUsCard}>
+                            <Grid item container justify="center" xs={11} sm={5} md={4} lg={3} className={classes.JoinUsCard}>
                                 <Paper className={classes.PaperStyle} >
                                     <div className={classes.cardIcon}>
                                         <img src={Talent} alt="Campus Ambasador" className={classes.Icon} />
@@ -152,7 +152,7 @@ const ContactUs = () => {
                                     </Typography>
                                 </Paper>
                             </Grid>
-                            <Grid item container justify="center" xs={11} lg={3} className={classes.JoinUsCard}>
+                            <Grid item container justify="center" xs={11} sm={5} md={4} lg={3} className={classes.JoinUsCard}>
                                 <Paper className={classes.PaperStyle} >
                                     <div className={classes.cardIcon}>
                                         <img src={Grow} alt="Campus Ambasador" className={classes.Icon} />

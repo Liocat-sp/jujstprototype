@@ -32,26 +32,26 @@ const useStyles = makeStyles((theme) => ({
         filter: "brightness(0.7)"
     },
     marginRequire: {
-        marginBottom: "1rem"
+        marginBottom: "1rem",
+        [theme.breakpoints.down("xs")]: {
+            marginBottom: "1.5rem"
+        }
     },
     TitleSection: {
         height: "70%",
-        width: '90%'
+        width: '90%',
     },
     TitleHead: {
-        // fontSize: "4rem",
         fontWeight: "600",
         color: "#fff",
         letterSpacing: "1px",
-        // [theme.breakpoints.up("xl")]: {
-        //     fontSize: "5.5rem"
-        // },
-        // [theme.breakpoints.down("lg")]: {
-        //     fontSize: "3rem"
-        // },
-        // [theme.breakpoints.down("sm")]: {
-        //     textAlign: "center"
-        // }
+        [theme.breakpoints.down("sm")]: {
+            fontSize: "2.5rem"
+        },
+        [theme.breakpoints.down("xs")]: {
+            fontSize: "2.5rem",   
+            textAlign: "center"
+        }
     },
     TitleSubText: {
         maxWidth: "500px",
@@ -64,7 +64,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("lg")]: {
             fontSize: "1.5rem"
         },
-        [theme.breakpoints.down("sm")]: {
+        [theme.breakpoints.down("xs")]: {
+            fontSize: "1.2rem",
             textAlign: "center"
         }
     },
@@ -79,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up("xl")]: {
             fontSize: "1.5rem"
         },
-        [theme.breakpoints.down("sm")]: {
+        [theme.breakpoints.down("xs")]: {
             display: "block",
             margin: "0 auto",
             fontSize: "0.8rem",

@@ -43,8 +43,8 @@ const useStyle = makeStyles((theme) => ({
             height: "230px"
         },
         [theme.breakpoints.down("xs")]: {
-            width: "190px",
-            height: "190px"
+            width: "180px",
+            height: "190px",
         }
     },
     imageStyle: {
@@ -68,14 +68,22 @@ const useStyle = makeStyles((theme) => ({
         color: "#fff",
         width: "80%",
         margin: "0 auto",
-        fontWeight: "400",
+        fontWeight: "500",
         [theme.breakpoints.down("xs")]: {
             width: "90%",
-            fontSize: "0.8rem"
+            fontSize: "1rem"
+        },
+        [theme.breakpoints.down(350)]: {
+            width: "95%"
         }
     },
     extraMargin: {
-        marginTop: "0.5rem"
+        marginTop: "0.5rem",
+    },
+    paddingControl:{
+        [theme.breakpoints.down("xs")]: {
+            padding: "8px !important"
+        }
     },
     cardText: {
         color: "#fff",
@@ -85,6 +93,9 @@ const useStyle = makeStyles((theme) => ({
         [theme.breakpoints.down("xs")]: {
             width: "90%",
             fontSize: "0.7rem"
+        },
+        [theme.breakpoints.down(350)]: {
+            width: "95%"
         }
     },
 }));
@@ -101,8 +112,8 @@ const Content = () => {
                             Content
                         </Typography>
                     </Grid>
-                    <Grid item container justify="space-between" spacing={4} className={classes.extraMargin}>
-                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
+                    <Grid item container justify="center" spacing={4} className={classes.extraMargin}>
+                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img2} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -115,7 +126,7 @@ const Content = () => {
                                 </div >
                             </Paper>
                         </Grid>
-                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img1} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -128,7 +139,7 @@ const Content = () => {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img3} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -142,7 +153,7 @@ const Content = () => {
                             </Paper>
 
                         </Grid>
-                        <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img4} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -155,7 +166,7 @@ const Content = () => {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img5} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -168,7 +179,7 @@ const Content = () => {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid container justify="center" direction="row" item xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container justify="center" direction="row" item xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img8} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -181,7 +192,7 @@ const Content = () => {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img6} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
@@ -194,7 +205,7 @@ const Content = () => {
                                 </div>
                             </Paper>
                         </Grid>
-                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
+                        <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img7} alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
