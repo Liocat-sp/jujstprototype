@@ -6,7 +6,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Content from './Components/Content/Content';
 import Subscribe from "./Components/Subscribe/Subscribe";
 import ContactUs from "./Components/ContactUs/ContactUs";
-
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Content />
       <Subscribe />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
