@@ -18,24 +18,29 @@ const useStyle = makeStyles(theme => ({
         letterSpacing: "1px",
         fontWeight: "500"
     },
-    // AboutUsImage: {
-    //     height: "500px",
-    //     boxSizing: "border-box",
-    //     width: "100%",
-    //     borderRadius: "30px",
-    //     backgroundColor: "#2f2f2f",
-    //     padding: "3rem",
-    //     letterSpacing: "2px",
-    //     color: "#7dbb2a",
-    // },
+    alignTitle: {
+        width: "100%"
+    },
+    AboutUsImage: {
+        maxHeight: "500px",
+        [theme.breakpoints.down("sm")]: {
+            maxHeight: "300px"
+        }
+    },
     AboutusTitle: {
         // fontSize: "2rem",/
         marginBottom: "1rem",
-        color: "#539100"
+        color: "#539100",
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center" 
+        }
     },
     AboutusSubTitle: {
         color: "#848484",
-        fontSize: "1.1rem"
+        fontSize: "1.1rem",
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center" 
+        }
     },
     paddingtop: {
         padding: "3rem 1rem"
@@ -48,7 +53,7 @@ const AboutUs = () => {
         <Container maxWidth="xl" className={classes.sectionContent}>
             <Grid container alignItems="center" justify="center">
                 <Grid item container lg={12} xl={11} >
-                    <Grid item lg={12} xl={11}>
+                    <Grid item lg={12} xl={11} className={classes.alignTitle}>
                         <Typography variant="h4" align="center" className={classes.SectionTitle}>
                             About Us
                         </Typography>
@@ -63,7 +68,7 @@ const AboutUs = () => {
                             </Typography>
                         </Grid>
                         <Grid item container justify="center" sm={12} lg={6} xl={6}>
-                                <img src={AboutImg} alt="about us"/>
+                                <img src={AboutImg} alt="about us" className={classes.AboutUsImage}/>
                         </Grid>
                     </Grid>
                 </Grid>

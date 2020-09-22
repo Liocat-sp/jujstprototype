@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     },
     headerImgGrid: {
         height: "85vh",
+        maxHeight: "850px",
         borderRadius: "30px",
         backgroundSize: "cover",
         backgroundPosition: "center",
