@@ -28,8 +28,8 @@ const useStyle = makeStyles((theme) => ({
         fontWeight: "500"
     },
     PaperStyle: {
-        width: "230px",
-        height: "230px",
+        width: "250px",
+        height: "250px",
         borderRadius: "10px",
         position: "relative",
         boxShadow: "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12)",
@@ -37,6 +37,10 @@ const useStyle = makeStyles((theme) => ({
         "&:hover": {
             transform: "translateY(-3px)",
             boxShadow: "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)"
+        },
+        [theme.breakpoints.down("sm")]: {
+            width: "230px",
+            height: "230px"
         },
         [theme.breakpoints.down("xs")]: {
             width: "190px",
@@ -70,6 +74,9 @@ const useStyle = makeStyles((theme) => ({
             fontSize: "0.8rem"
         }
     },
+    extraMargin: {
+        marginTop: "0.5rem"
+    },
     cardText: {
         color: "#fff",
         width: "80%",
@@ -94,7 +101,7 @@ const Content = () => {
                             Content
                         </Typography>
                     </Grid>
-                    <Grid item container justify="space-between" spacing={4}>
+                    <Grid item container justify="space-between" spacing={4} className={classes.extraMargin}>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} >
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img2} alt="content" className={classes.imageStyle} />
