@@ -11,7 +11,11 @@ import Hero from "../../assets/images/hero.jpg";
 
 const useStyles = makeStyles((theme) => ({
     setPosition: {
-        position: "relative"
+        position: "relative",
+        [theme.breakpoints.down("xs")]: {
+            paddingLeft: "20px",
+            paddingRight: "20px"
+        }
     },
     header: {
         position: "relative",
@@ -22,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "30px",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        [theme.breakpoints.down("xs")]: {
+            height: "80vh"
+        }
     },
     heroImage: {
         display: "block",
@@ -46,10 +53,14 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         letterSpacing: "1px",
         [theme.breakpoints.down("sm")]: {
-            fontSize: "2.5rem"
+            fontSize: "2.9rem"
         },
         [theme.breakpoints.down("xs")]: {
             fontSize: "2.5rem",   
+            textAlign: "center"
+        },
+        [theme.breakpoints.down(370)]: {
+            fontSize: "2.2rem",
             textAlign: "center"
         }
     },
@@ -59,13 +70,17 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "400",
         letterSpacing: "0.5px",
         [theme.breakpoints.up("xl")]: {
-            fontSize: "2rem"
+            fontSize: "2.4rem"
         },
         [theme.breakpoints.down("lg")]: {
             fontSize: "1.5rem"
         },
         [theme.breakpoints.down("xs")]: {
-            fontSize: "1.2rem",
+            fontSize: "1.4rem",
+            textAlign: "center"
+        },
+        [theme.breakpoints.down(370)]: {
+            fontSize: "1.1rem",
             textAlign: "center"
         }
     },
@@ -81,6 +96,12 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "1.5rem"
         },
         [theme.breakpoints.down("xs")]: {
+            display: "block",
+            margin: "0 auto",
+            fontSize: "1rem",
+            textAlign: "center"
+        },
+        [theme.breakpoints.down(370)]: {
             display: "block",
             margin: "0 auto",
             fontSize: "0.8rem",
