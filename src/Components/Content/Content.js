@@ -25,7 +25,10 @@ const useStyle = makeStyles((theme) => ({
         color: "#5f5e5e",
         textAlign: "center",
         letterSpacing: "1px",
-        fontWeight: "500"
+        fontWeight: "500",
+        [theme.breakpoints.down("xs")]: {
+            margin: "1.5rem 0 1.5rem 0"
+        }
     },
     PaperStyle: {
         width: "250px",
@@ -43,8 +46,8 @@ const useStyle = makeStyles((theme) => ({
             height: "230px"
         },
         [theme.breakpoints.down("xs")]: {
-            width: "180px",
-            height: "190px",
+            width: "160px",
+            height: "175px",
         }
     },
     imageStyle: {

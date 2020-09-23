@@ -22,7 +22,10 @@ const useStyles = makeStyles((theme) => ({
         color: "#5f5e5e",
         textAlign: "center",
         letterSpacing: "1px",
-        fontWeight: "500"
+        fontWeight: "500",
+        [theme.breakpoints.down("xs")]: {
+            margin: "1.5rem 0 1.5rem 0"
+        }
     },
     contactImage: {
         height: "500px",

@@ -18,6 +18,11 @@ const useStyles = makeStyles((theme) => ({
             height: "100px"
         }
     },
+    NavBarPad: {
+        [theme.breakpoints.down("xs")]: {
+            padding: "0"
+        }
+    },
     navLinks: {
         cursor: "pointer"
     },
@@ -64,7 +69,7 @@ const Navbar = () => {
         <div>
             <AppBar color="transparent" position="relative" className={classes.Navbar}>
                 <Toolbar className={classes.toolbar}>
-                    <Container maxWidth="xl">
+                    <Container maxWidth="xl" className={classes.NavBarPad} >
                         <Grid container justify="center" maxwidth="xl">
                             <Grid container item justify="space-between" lg={12} xl={11}>
                                 <Typography varient="h6">Unstoppable</Typography>

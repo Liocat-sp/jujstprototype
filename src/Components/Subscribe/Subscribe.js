@@ -20,7 +20,10 @@ const useStyle = makeStyles(theme => ({
         color: "#5f5e5e",
         textAlign: "center",
         letterSpacing: "1px",
-        fontWeight: "500"
+        fontWeight: "500",
+        [theme.breakpoints.down("xs")]: {
+            margin: "2.5rem 0 1.5rem 0"
+        }
     },
     stepImage: {
         height: "100%",
@@ -41,6 +44,9 @@ const useStyle = makeStyles(theme => ({
         padding: "3px",
         textAlign: "center",
         cursor: "default",
+        [theme.breakpoints.down("xs")]: {
+            lineHeight: "145%"
+        }
     },
     stepsText: {
         width: "100%",

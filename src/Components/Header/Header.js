@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
     setPosition: {
         position: "relative",
         [theme.breakpoints.down("xs")]: {
-            paddingLeft: "20px",
-            paddingRight: "20px"
+            paddingLeft: "0px",
+            paddingRight: "0px"
         }
     },
     header: {
@@ -27,17 +27,21 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "cover",
         backgroundPosition: "center",
         [theme.breakpoints.down("xs")]: {
-            height: "80vh"
+            height: "75vh",
+            borderRadius: "0"
         }
     },
-    heroImage: {
-        display: "block",
-        width: "100%",
-        height: "100%",
-        borderRadius: "30px",
-        objectFit: "cover",
-        filter: "brightness(0.7)"
-    },
+    // heroImage: {
+    //     display: "block",
+    //     width: "100%",
+    //     height: "100%",
+    //     borderRadius: "30px",
+    //     objectFit: "cover",
+    //     filter: "brightness(0.7)",
+    //     [theme.breakpoints.down("xs")]: {
+    //         borderRadius: "0"
+    //     }
+    // },
     marginRequire: {
         marginBottom: "1rem",
         [theme.breakpoints.down("xs")]: {
