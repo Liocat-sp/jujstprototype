@@ -31,17 +31,6 @@ const useStyles = makeStyles((theme) => ({
             borderRadius: "0"
         }
     },
-    // heroImage: {
-    //     display: "block",
-    //     width: "100%",
-    //     height: "100%",
-    //     borderRadius: "30px",
-    //     objectFit: "cover",
-    //     filter: "brightness(0.7)",
-    //     [theme.breakpoints.down("xs")]: {
-    //         borderRadius: "0"
-    //     }
-    // },
     marginRequire: {
         marginBottom: "1rem",
         [theme.breakpoints.down("xs")]: {
