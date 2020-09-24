@@ -57,7 +57,7 @@ const useStyle = makeStyles(theme => ({
 const AboutUs = () => {
     const classes = useStyle();
     return (
-        <Container maxWidth="xl" className={classes.sectionContent}>
+        <Container maxWidth="xl" className={classes.sectionContent} id="About Us">
             <Grid container alignItems="center" justify="center">
                 <Grid item container lg={12} xl={11} >
                     <Grid item lg={12} xl={11} className={classes.alignTitle}>

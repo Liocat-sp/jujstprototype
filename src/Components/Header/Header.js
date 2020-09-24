@@ -12,7 +12,9 @@ import Hero from "../../assets/images/hero.jpg";
 const useStyles = makeStyles((theme) => ({
     setPosition: {
         position: "relative",
+        marginTop: "64px",
         [theme.breakpoints.down("xs")]: {
+            mmarginTop: "54px",
             paddingLeft: "0px",
             paddingRight: "0px"
         }
@@ -106,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
     const classes = useStyles();
     return (
-        <Container maxWidth="xl" className={classes.setPosition}>
+        <Container maxWidth="xl" className={classes.setPosition} id="Header">
             <Grid container item alignItems="center" justify="center" className={classes.header} >
                 <Grid container item alignItems="center" justify="center" style={{ backgroundImage: `linear-gradient(90deg, rgb(21 21 21 / 40%) 0%, rgb(81 81 81 / 34%) 35%, rgb(83 83 83 / 29%) 100%), url(${Hero})` }} className={classes.headerImgGrid} lg={12} xl={11}>
                     <Grid item xl={11} className={classes.TitleSection}>

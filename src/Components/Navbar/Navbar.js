@@ -1,4 +1,5 @@
 import React from 'react';
+import Scroll from "react-scroll";
 
 import "./Navbar.css";
 
@@ -12,6 +13,8 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 const useStyles = makeStyles((theme) => ({
     Navbar: {
         boxShadow: "none",
+        backgroundColor: "#ffffffc7",
+        backdropFilter: "blur(10px)"
     },
     toolbar: {
         [theme.breakpoints.up("xl")]: {
@@ -24,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     navLinks: {
+        boxSizing: "border-box",
         cursor: "pointer"
     },
     navDesktop: {
@@ -50,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            
+
         }
     },
     navLinksMobile: {
@@ -67,17 +71,65 @@ const Navbar = () => {
     const [menueButton, setMButton] = React.useState(false);
     return (
         <div>
-            <AppBar color="transparent" position="relative" className={classes.Navbar}>
+            <AppBar color="transparent" position="fixed" className={classes.Navbar} >
                 <Toolbar className={classes.toolbar}>
                     <Container maxWidth="xl" className={classes.NavBarPad} >
                         <Grid container justify="center" maxwidth="xl">
                             <Grid container item justify="space-between" lg={12} xl={11}>
                                 <Typography varient="h6">Unstoppable</Typography>
-                                <Grid container item direction="row" justify="space-between" sm={4} xl={4} className={classes.navDesktop}>
-                                    <Typography varient="h5" className={classes.navLinks}>About</Typography>
-                                    <Typography varient="h5" className={classes.navLinks}>Content</Typography>
-                                    <Typography varient="h5" className={classes.navLinks}>Subscribe</Typography>
-                                    <Typography varient="h5" className={classes.navLinks}>Be Unstoppable</Typography>
+                                <Grid container item direction="row" justify="space-between" sm={6} md={6} lg={5} xl={4} className={classes.navDesktop}>
+                                    <Scroll.Link
+                                        activeClass="active"
+                                        spy={true}
+                                        to="Header"
+                                        smooth={true}
+                                        offset={-65}
+                                        duration={600}
+                                        style={{padding: "2px 10px"}}
+                                    >
+                                        <Typography varient="h5" className={`${classes.navLinks}`}>Home</Typography>
+                                    </Scroll.Link>
+                                    <Scroll.Link
+                                        activeClass="active"
+                                        spy={true}
+                                        to="About Us"
+                                        smooth={true}
+                                        offset={-60}
+                                        duration={600}
+                                        style={{padding: "2px 10px"}}
+                                    >
+                                        <Typography varient="h5" className={`${classes.navLinks}`}>About</Typography>
+                                    </Scroll.Link>
+                                    <Scroll.Link
+                                        activeClass="active"
+                                        spy={true}
+                                        to="Content"
+                                        smooth={true}
+                                        offset={-60}
+                                        style={{padding: "2px 10px"}}
+                                        duration={500}>
+                                        <Typography varient="h5" className={classes.navLinks}>Content</Typography>
+                                    </Scroll.Link>
+                                    <Scroll.Link
+                                        activeClass="active"
+                                        spy={true}
+                                        to="How to Subscribe"
+                                        smooth={true}
+                                        offset={-60}
+                                        style={{padding: "2px 10px"}}
+                                        duration={500}>
+                                        <Typography varient="h5" className={classes.navLinks}>Subscribe</Typography>
+                                    </Scroll.Link>
+                                    <Scroll.Link
+                                        activeClass="active"
+                                        spy={true}
+                                        to="Be Unstoppable"
+                                        smooth={true}
+                                        offset={-60}
+                                        style={{padding: "2px 10px"}}
+                                        duration={500}>
+                                        <Typography varient="h5" className={classes.navLinks}>Be Unstoppable</Typography>
+                                    </Scroll.Link>
                                 </Grid>
                                 <Grid className={classes.menue} onClick={() => { setMButton(prev => !prev) }}>
                                     <span className={`hamburger ${menueButton === true && "active"}`} ></span>

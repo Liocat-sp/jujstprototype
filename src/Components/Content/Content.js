@@ -24,7 +24,7 @@ const useStyle = makeStyles((theme) => ({
         margin: "2.5rem 0 2.5rem 0",
         color: "#5f5e5e",
         textAlign: "center",
-        letterSpacing: "1px",
+        letterSpacing: "1px", 
         fontWeight: "500",
         [theme.breakpoints.down("xs")]: {
             margin: "1.5rem 0 1.5rem 0"
@@ -107,7 +107,7 @@ const Content = () => {
     const classes = useStyle();
 
     return (
-        <Container maxWidth="xl" className={classes.sectionContent}>
+        <Container maxWidth="xl" className={classes.sectionContent} id="Content">
             <Grid container alignItems="center" justify="center">
                 <Grid container item alignItems="center" justify="center" lg={12} xl={11}>
                     <Grid item lg={11} xl={11}>
@@ -118,7 +118,7 @@ const Content = () => {
                     <Grid item container justify="center" spacing={4} className={classes.extraMargin}>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img2} alt="content" className={classes.imageStyle} />
+                                <img src={Img2} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Future
@@ -131,7 +131,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img1} alt="content" className={classes.imageStyle} />
+                                <img src={Img1} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Inspiration
@@ -144,7 +144,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img3} alt="content" className={classes.imageStyle} />
+                                <img src={Img3} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Campus
@@ -158,7 +158,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img4} alt="content" className={classes.imageStyle} />
+                                <img src={Img4} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Job Board
@@ -171,7 +171,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row"  xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img5} alt="content" className={classes.imageStyle} />
+                                <img src={Img5} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Startups
@@ -184,7 +184,7 @@ const Content = () => {
                         </Grid>
                         <Grid container justify="center" direction="row" item xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img8} alt="content" className={classes.imageStyle} />
+                                <img src={Img8} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Culture
@@ -197,7 +197,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img6} alt="content" className={classes.imageStyle} />
+                                <img src={Img6} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Voices
@@ -210,7 +210,7 @@ const Content = () => {
                         </Grid>
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
-                                <img src={Img7} alt="content" className={classes.imageStyle} />
+                                <img src={Img7} loading="auto" alt="content" className={classes.imageStyle} />
                                 <div className={classes.alignCenter}>
                                     <Typography variant="h6" className={classes.cardText1}>
                                         Talent Spotting

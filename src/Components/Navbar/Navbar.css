@@ -3,6 +3,14 @@
     position: relative;
 }
 
+.active {
+    position: relative;
+    padding: 2px 10px;
+    background-color: #80cc1b;
+    color: #fff;
+    border-radius: 20px;
+}
+
 .hamburger,.hamburger::before, .hamburger::after {
     height: 4px;
     cursor: pointer;

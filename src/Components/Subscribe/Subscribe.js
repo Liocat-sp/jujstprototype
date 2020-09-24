@@ -90,7 +90,7 @@ const useStyle = makeStyles(theme => ({
 const Subscribe = () => {
     const classes = useStyle();
     return (
-        <Container maxWidth="xl" className={classes.sectionContent}>
+        <Container maxWidth="xl" className={classes.sectionContent} id="How to Subscribe">
             <Grid container alignItems="center" justify="center">
                 <Grid container item alignItems="center" justify="center" lg={11} xl={11}>
                     <Grid item lg={12} xl={11} >
