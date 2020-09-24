@@ -132,7 +132,7 @@ const Navbar = () => {
                                     </Scroll.Link>
                                 </Grid>
                                 <Grid className={classes.menue} onClick={() => { setMButton(prev => !prev) }}>
-                                    <span className={`hamburger ${menueButton === true && "active"}`} ></span>
+                                    <span className={`hamburger ${menueButton === true && "active2"}`} ></span>
                                 </Grid>
                             </Grid>
                         </Grid>

@@ -40,13 +40,13 @@
     -webkit-transform-origin: left;
 }
 
-.hamburger.active::before{
+.hamburger.active2::before{
     transform: translate(0) rotate(90deg);
 }
-.hamburger.active::after{
+.hamburger.active2::after{
     transform: translate(0) rotate(90deg);
 }
-.hamburger.active{
+.hamburger.active2{
     transform: translate(0) rotate(45deg);
 }
 
