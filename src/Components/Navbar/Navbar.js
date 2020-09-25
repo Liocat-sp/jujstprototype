@@ -3,6 +3,8 @@ import Scroll from "react-scroll";
 
 import "./Navbar.css";
 
+import Home from "../../assets/icons/home.svg";
+
 import Container from "@material-ui/core/Container";
 import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
@@ -42,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
             alignItems: "center",
         }
     },
+    HomeNav: {
+        height: "21px",
+        width: "21px"
+    },
     menueItems: {
         zIndex: "400",
         width: "100%",
@@ -79,7 +85,7 @@ const Navbar = () => {
                                 <Typography varient="h6">Unstoppable</Typography>
                                 <Grid container item direction="row" justify="space-between" sm={6} md={6} lg={5} xl={4} className={classes.navDesktop}>
                                     <Scroll.Link
-                                        activeClass="active"
+                                        activeClass="active3"
                                         spy={true}
                                         to="Header"
                                         smooth={true}
@@ -87,7 +93,8 @@ const Navbar = () => {
                                         duration={600}
                                         style={{padding: "2px 10px"}}
                                     >
-                                        <Typography varient="h5" className={`${classes.navLinks}`}>Home</Typography>
+                                        {/* <Typography varient="h5" className={`${classes.navLinks}`}>Home</Typography> */}
+                                        <img src={Home} className={`${classes.HomeNav} ${classes.navLinks}`}  alt="Home"/>
                                     </Scroll.Link>
                                     <Scroll.Link
                                         activeClass="active"
