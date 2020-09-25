@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-
         }
     },
     navLinksMobile: {
@@ -167,7 +166,7 @@ const Navbar = () => {
                         </div>
                         <div className={classes.navLinksMobile}>
                             <Scroll.Link
-                                activeClass="active"
+                                activeClass="activenull"
                                 spy={true}
                                 to="About Us"
                                 smooth={true}
@@ -180,7 +179,7 @@ const Navbar = () => {
                         </div>
                         <div className={classes.navLinksMobile}>
                             <Scroll.Link
-                                activeClass="active"
+                                activeClass="active4null"
                                 spy={true}
                                 to="Content"
                                 smooth={true}
@@ -193,7 +192,7 @@ const Navbar = () => {
                         </div>
                         <div className={classes.navLinksMobile}>
                             <Scroll.Link
-                                activeClass="active"
+                                activeClass="activenull"
                                 spy={true}
                                 to="How to Subscribe"
                                 smooth={true}
@@ -206,7 +205,7 @@ const Navbar = () => {
                         </div>
                         <div className={classes.navLinksMobile}  >
                             <Scroll.Link
-                                activeClass="active"
+                                activeClass="activenull"
                                 spy={true}
                                 to="Be Unstoppable"
                                 smooth={true}
