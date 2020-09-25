@@ -150,7 +150,7 @@ const Navbar = () => {
             {menueButton === true &&
                 <div className={classes.menueItems}>
                     <div className={classes.menueLinks}>
-                    <div className={classes.navLinksMobile} onClick={() => setMButton(prev => !prev)}>
+                    <div className={classes.navLinksMobile} >
                         <Scroll.Link
                             activeClass="active3"
                             spy={true}
@@ -165,42 +165,41 @@ const Navbar = () => {
                             <Typography varient="h5" >Home</Typography>
                         </Scroll.Link>
                         </div>
-                        <div className={classes.navLinksMobile} onClick={() => setMButton(prev => !prev)}>
+                        <div className={classes.navLinksMobile}>
                             <Scroll.Link
                                 activeClass="active"
                                 spy={true}
                                 to="About Us"
                                 smooth={true}
                                 offset={-60}
-                                duration={600}
+                                duration={500}
                                 style={{ padding: "2px 10px" }}
                                 onClick={() => setMButton(prev => false)}>
                                 <Typography varient="h4" align="center">About</Typography>
                             </Scroll.Link>
                         </div>
-                        <div className={classes.navLinksMobile} >
+                        <div className={classes.navLinksMobile}>
                             <Scroll.Link
                                 activeClass="active"
                                 spy={true}
                                 to="Content"
                                 smooth={true}
                                 offset={-60}
-                                style={{ padding: "2px 10px" }}
                                 duration={500}
-                                onClick={() => setMButton(prev => false)}
-                            >
+                                style={{ padding: "2px 10px" }}
+                                onClick={() => setMButton(prev => false)}>
                                 <Typography varient="h4" align="center">Content</Typography>
                             </Scroll.Link>
                         </div>
-                        <div className={classes.navLinksMobile} >
+                        <div className={classes.navLinksMobile}>
                             <Scroll.Link
                                 activeClass="active"
                                 spy={true}
                                 to="How to Subscribe"
                                 smooth={true}
                                 offset={-60}
-                                style={{ padding: "2px 10px" }}
                                 duration={500}
+                                style={{ padding: "2px 10px" }}
                                 onClick={() => setMButton(prev => false)}>
                                 <Typography varient="h4" align="center">Subscribe</Typography>
                             </Scroll.Link>
