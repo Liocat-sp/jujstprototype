@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         height: "100%",
         display: "none",
-        position: "absolute",
+        position: "fixed",
         backgroundColor: "#fff",
         [theme.breakpoints.down("sm")]: {
             transform: "translateY(-60px)",
@@ -66,8 +66,9 @@ const useStyles = makeStyles((theme) => ({
     navLinksMobile: {
         cursor: "pointer",
         marginTop: "2rem",
-        fontWeight: "500"
-
+        fontWeight: "500",
+        display: "flex",
+        justifyContent: "center"
     }
 }));
 
@@ -91,10 +92,10 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={-65}
                                         duration={600}
-                                        style={{padding: "2px 10px"}}
+                                        style={{ padding: "2px 10px" }}
                                     >
                                         {/* <Typography varient="h5" className={`${classes.navLinks}`}>Home</Typography> */}
-                                        <img src={Home} className={`${classes.HomeNav} ${classes.navLinks}`}  alt="Home"/>
+                                        <img src={Home} className={`${classes.HomeNav} ${classes.navLinks}`} alt="Home" />
                                     </Scroll.Link>
                                     <Scroll.Link
                                         activeClass="active"
@@ -103,7 +104,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={-60}
                                         duration={600}
-                                        style={{padding: "2px 10px"}}
+                                        style={{ padding: "2px 10px" }}
                                     >
                                         <Typography varient="h5" className={`${classes.navLinks}`}>About</Typography>
                                     </Scroll.Link>
@@ -113,7 +114,7 @@ const Navbar = () => {
                                         to="Content"
                                         smooth={true}
                                         offset={-60}
-                                        style={{padding: "2px 10px"}}
+                                        style={{ padding: "2px 10px" }}
                                         duration={500}>
                                         <Typography varient="h5" className={classes.navLinks}>Content</Typography>
                                     </Scroll.Link>
@@ -123,7 +124,7 @@ const Navbar = () => {
                                         to="How to Subscribe"
                                         smooth={true}
                                         offset={-60}
-                                        style={{padding: "2px 10px"}}
+                                        style={{ padding: "2px 10px" }}
                                         duration={500}>
                                         <Typography varient="h5" className={classes.navLinks}>Subscribe</Typography>
                                     </Scroll.Link>
@@ -133,7 +134,7 @@ const Navbar = () => {
                                         to="Be Unstoppable"
                                         smooth={true}
                                         offset={-60}
-                                        style={{padding: "2px 10px"}}
+                                        style={{ padding: "2px 10px" }}
                                         duration={500}>
                                         <Typography varient="h5" className={classes.navLinks}>Be Unstoppable</Typography>
                                     </Scroll.Link>
@@ -149,10 +150,74 @@ const Navbar = () => {
             {menueButton === true &&
                 <div className={classes.menueItems}>
                     <div className={classes.menueLinks}>
-                        <Typography varient="h4" className={classes.navLinksMobile} align="center">About</Typography>
-                        <Typography varient="h4" className={classes.navLinksMobile} align="center">Content</Typography>
-                        <Typography varient="h4" className={classes.navLinksMobile} align="center">Subscribe</Typography>
-                        <Typography varient="h4" className={classes.navLinksMobile} align="center">Be Unstoppable</Typography>
+                    <div className={classes.navLinksMobile} onClick={() => setMButton(prev => !prev)}>
+                        <Scroll.Link
+                            activeClass="active3"
+                            spy={true}
+                            to="Header"
+                            smooth={true}
+                            offset={-65}
+                            duration={600}
+                            style={{ padding: "2px 10px", display: "flex" }}
+                            onClick={() => setMButton(prev => false)}
+                        >
+                            <img src={Home} className={`${classes.HomeNav}`} style={{marginRight: "5px"}} alt="Home" />
+                            <Typography varient="h5" >Home</Typography>
+                        </Scroll.Link>
+                        </div>
+                        <div className={classes.navLinksMobile} onClick={() => setMButton(prev => !prev)}>
+                            <Scroll.Link
+                                activeClass="active"
+                                spy={true}
+                                to="About Us"
+                                smooth={true}
+                                offset={-60}
+                                duration={600}
+                                style={{ padding: "2px 10px" }}
+                                onClick={() => setMButton(prev => false)}>
+                                <Typography varient="h4" align="center">About</Typography>
+                            </Scroll.Link>
+                        </div>
+                        <div className={classes.navLinksMobile} >
+                            <Scroll.Link
+                                activeClass="active"
+                                spy={true}
+                                to="Content"
+                                smooth={true}
+                                offset={-60}
+                                style={{ padding: "2px 10px" }}
+                                duration={500}
+                                onClick={() => setMButton(prev => false)}
+                            >
+                                <Typography varient="h4" align="center">Content</Typography>
+                            </Scroll.Link>
+                        </div>
+                        <div className={classes.navLinksMobile} >
+                            <Scroll.Link
+                                activeClass="active"
+                                spy={true}
+                                to="How to Subscribe"
+                                smooth={true}
+                                offset={-60}
+                                style={{ padding: "2px 10px" }}
+                                duration={500}
+                                onClick={() => setMButton(prev => false)}>
+                                <Typography varient="h4" align="center">Subscribe</Typography>
+                            </Scroll.Link>
+                        </div>
+                        <div className={classes.navLinksMobile}  >
+                            <Scroll.Link
+                                activeClass="active"
+                                spy={true}
+                                to="Be Unstoppable"
+                                smooth={true}
+                                offset={-60}
+                                style={{ padding: "2px 10px" }}
+                                duration={500}
+                                onClick={() => setMButton(prev => false)}>
+                                <Typography varient="h4" align="center">Be Unstoppable</Typography>
+                            </Scroll.Link>
+                        </div>
                     </div>
                 </div>
             }
