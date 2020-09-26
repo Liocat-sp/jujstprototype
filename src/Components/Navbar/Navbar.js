@@ -180,7 +180,7 @@ const Navbar = () => {
                             spy={true}
                             to="Content"
                             smooth={true}
-                            offset={20}
+                            offset={30}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                             duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Content</Typography>
