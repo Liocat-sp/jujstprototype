@@ -169,7 +169,7 @@ const Navbar = () => {
                             spy={true}
                             to="About Us"
                             smooth={true}
-                            offset={10}
+                            offset={-20}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
@@ -180,7 +180,7 @@ const Navbar = () => {
                             spy={true}
                             to="Content"
                             smooth={true}
-                            offset={10}
+                            offset={-20}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
@@ -191,7 +191,7 @@ const Navbar = () => {
                             spy={true}
                             to="How to Subscribe"
                             smooth={true}
-                            offset={10}
+                            offset={-20}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                             duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Subscribe</Typography>
@@ -201,7 +201,7 @@ const Navbar = () => {
                             spy={true}
                             to="Be Unstoppable"
                             smooth={true}
-                            offset={10}
+                            offset={-20}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                             duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Be Unstoppable</Typography>
