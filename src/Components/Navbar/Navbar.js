@@ -62,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
             justifyContent: "center",
         }
     },
+    menueLinks: {
+        width: "35%"
+    },
     navLinksMobile: {
         cursor: "pointer",
         marginTop: "2rem",
@@ -148,75 +151,61 @@ const Navbar = () => {
             </AppBar>
             {menueButton === true &&
                 <div className={classes.menueItems}>
-                    <div className={classes.menueLinks}>
-                    <div className={classes.navLinksMobile} >
+                    <Grid container item direction="column" justify="center"  className={classes.menueLinks}>
                         <Scroll.Link
-                            activeClass="active3"
+                            activeClass="active"
                             spy={true}
                             to="Header"
                             smooth={true}
                             offset={-65}
                             duration={600}
-                            style={{ padding: "2px 10px", display: "flex" }}
-                            onClick={() => setMButton(prev => false)}
+                            style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
-                            <img src={Home} className={`${classes.HomeNav}`} style={{marginRight: "5px"}} alt="Home" />
-                            <Typography varient="h5" >Home</Typography>
+                            <Typography varient="h5" className={`${classes.navLinks}`} align="center" onClick={() => setMButton(false)}>Home</Typography>
+                            {/* <img src={Home} className={`${classes.HomeNav} ${classes.navLinks}`} alt="Home" /> */}
                         </Scroll.Link>
-                        </div>
-                        <div className={classes.navLinksMobile}>
-                            <Scroll.Link
-                                activeClass="activenull"
-                                spy={true}
-                                to="About Us"
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                style={{ padding: "2px 10px" }}
-                                onClick={() => setMButton(prev => false)}>
-                                <Typography varient="h4" align="center">About</Typography>
-                            </Scroll.Link>
-                        </div>
-                        <div className={classes.navLinksMobile}>
-                            <Scroll.Link
-                                activeClass="active4null"
-                                spy={true}
-                                to="Content"
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                style={{ padding: "2px 10px" }}
-                                onClick={() => setMButton(prev => false)}>
-                                <Typography varient="h4" align="center">Content</Typography>
-                            </Scroll.Link>
-                        </div>
-                        <div className={classes.navLinksMobile}>
-                            <Scroll.Link
-                                activeClass="activenull"
-                                spy={true}
-                                to="How to Subscribe"
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                style={{ padding: "2px 10px" }}
-                                onClick={() => setMButton(prev => false)}>
-                                <Typography varient="h4" align="center">Subscribe</Typography>
-                            </Scroll.Link>
-                        </div>
-                        <div className={classes.navLinksMobile}  >
-                            <Scroll.Link
-                                activeClass="activenull"
-                                spy={true}
-                                to="Be Unstoppable"
-                                smooth={true}
-                                offset={-60}
-                                style={{ padding: "2px 10px" }}
-                                duration={500}
-                                onClick={() => setMButton(prev => false)}>
-                                <Typography varient="h4" align="center">Be Unstoppable</Typography>
-                            </Scroll.Link>
-                        </div>
-                    </div>
+                        <Scroll.Link
+                            activeClass="active"
+                            spy={true}
+                            to="About Us"
+                            smooth={true}
+                            offset={-60}
+                            duration={600}
+                            style={{ padding: "2px 10px", margin: "1rem 0" }}
+                        >
+                            <Typography varient="h5" className={`${classes.navLinks}`} align="center" onClick={() => setMButton(false)}>About</Typography>
+                        </Scroll.Link>
+                        <Scroll.Link
+                            activeClass="active"
+                            spy={true}
+                            to="Content"
+                            smooth={true}
+                            offset={-60}
+                            style={{ padding: "2px 10px", margin: "1rem 0" }}
+                            duration={500}>
+                            <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Content</Typography>
+                        </Scroll.Link>
+                        <Scroll.Link
+                            activeClass="active"
+                            spy={true}
+                            to="How to Subscribe"
+                            smooth={true}
+                            offset={-60}
+                            style={{ padding: "2px 10px", margin: "1rem 0" }}
+                            duration={500}>
+                            <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Subscribe</Typography>
+                        </Scroll.Link>
+                        <Scroll.Link
+                            activeClass="active"
+                            spy={true}
+                            to="Be Unstoppable"
+                            smooth={true}
+                            offset={-60}
+                            style={{ padding: "2px 10px", margin: "1rem 0" }}
+                            duration={500}>
+                            <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Be Unstoppable</Typography>
+                        </Scroll.Link>
+                    </Grid>
                 </div>
             }
         </div>
