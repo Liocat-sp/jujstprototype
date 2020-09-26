@@ -178,9 +178,9 @@ const Navbar = () => {
                         <Scroll.Link
                             activeClass="active"
                             spy={true}
-                            to="Content"
+                            to="contentP"
                             smooth={true}
-                            // offset={60}
+                            offset={-50}
                             isDynamic={true}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}

@@ -115,7 +115,7 @@ const Content = () => {
                             Content
                         </Typography>
                     </Grid>
-                    <Grid item container justify="center" spacing={4} className={classes.extraMargin}>
+                    <Grid item container justify="center" spacing={4} className={classes.extraMargin} id="contentP">
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img2} loading="auto" alt="content" className={classes.imageStyle} />
