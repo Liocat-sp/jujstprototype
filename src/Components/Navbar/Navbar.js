@@ -190,9 +190,9 @@ const Navbar = () => {
                         <Scroll.Link
                             activeClass="active"
                             spy={true}
-                            to="How to Subscribe"
+                            to="Subscribe"
                             smooth={true}
-                            offset={-20}
+                            offset={-50}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                             duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Subscribe</Typography>

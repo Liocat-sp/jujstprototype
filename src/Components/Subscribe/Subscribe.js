@@ -98,7 +98,7 @@ const Subscribe = () => {
                             How to Subscribe
                         </Typography>
                     </Grid>
-                    <Grid item container justify="center" direction="row">
+                    <Grid item container justify="center" direction="row" id="Subscribe">
                         <Grid container item justify="center" xs={12} sm={6} md={4} lg={4} xl={4} className={classes.sideGutters}>
                             <Grid>
                                 <div className={classes.stepNumber}>1</div>
