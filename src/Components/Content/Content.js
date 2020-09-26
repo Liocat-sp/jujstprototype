@@ -110,12 +110,12 @@ const Content = () => {
         <Container maxWidth="xl" className={classes.sectionContent} id="Content">
             <Grid container alignItems="center" justify="center">
                 <Grid container item alignItems="center" justify="center" lg={12} xl={11}>
-                    <Grid item lg={11} xl={11} id="contentP">
+                    <Grid item lg={11} xl={11}>
                         <Typography variant="h4" className={classes.SectionTitle} align="center">
                             Content
                         </Typography>
                     </Grid>
-                    <Grid item container justify="center" spacing={4} className={classes.extraMargin} >
+                    <Grid item container justify="center" spacing={4} className={classes.extraMargin} id="contentP">
                         <Grid container item justify="center" direction="row" xs={6} sm={6} md={4} lg={3} xl={3} className={classes.paddingControl}>
                             <Paper className={classes.PaperStyle}>
                                 <img src={Img2} loading="auto" alt="content" className={classes.imageStyle} />

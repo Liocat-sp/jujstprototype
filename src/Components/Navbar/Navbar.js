@@ -180,7 +180,7 @@ const Navbar = () => {
                             spy={true}
                             to="contentP"
                             smooth={true}
-                            offset={-40}
+                            offset={-50}
                             isDynamic={true}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
@@ -192,7 +192,7 @@ const Navbar = () => {
                             spy={true}
                             to="Subscribe"
                             smooth={true}
-                            offset={-60}
+                            offset={-50}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                             duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Subscribe</Typography>
