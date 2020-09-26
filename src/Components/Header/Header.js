@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         marginTop: "64px",
         [theme.breakpoints.down("xs")]: {
-            mmarginTop: "54px",
+            marginTop: "54px",
             paddingLeft: "0px",
             paddingRight: "0px"
         }
