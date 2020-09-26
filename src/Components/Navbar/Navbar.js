@@ -157,7 +157,7 @@ const Navbar = () => {
                             spy={true}
                             to="Header"
                             smooth={true}
-                            offset={-60}
+                            offset={-65}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
