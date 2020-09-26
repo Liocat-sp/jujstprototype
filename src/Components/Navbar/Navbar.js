@@ -117,7 +117,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={-60}
                                         style={{ padding: "2px 10px" }}
-                                        duration={500}>
+                                        duration={600}>
                                         <Typography varient="h5" className={classes.navLinks}>Content</Typography>
                                     </Scroll.Link>
                                     <Scroll.Link
@@ -127,7 +127,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={-60}
                                         style={{ padding: "2px 10px" }}
-                                        duration={500}>
+                                        duration={600}>
                                         <Typography varient="h5" className={classes.navLinks}>Subscribe</Typography>
                                     </Scroll.Link>
                                     <Scroll.Link
@@ -137,7 +137,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={-60}
                                         style={{ padding: "2px 10px" }}
-                                        duration={500}>
+                                        duration={600}>
                                         <Typography varient="h5" className={classes.navLinks}>Be Unstoppable</Typography>
                                     </Scroll.Link>
                                 </Grid>
@@ -157,7 +157,7 @@ const Navbar = () => {
                             spy={true}
                             to="Header"
                             smooth={true}
-                            offset={-65}
+                            offset={-50}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
@@ -169,7 +169,7 @@ const Navbar = () => {
                             spy={true}
                             to="About Us"
                             smooth={true}
-                            offset={-60}
+                            offset={-50}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
@@ -180,9 +180,9 @@ const Navbar = () => {
                             spy={true}
                             to="Content"
                             smooth={true}
-                            offset={-60}
+                            offset={-50}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
-                            duration={500}>
+                            duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Content</Typography>
                         </Scroll.Link>
                         <Scroll.Link
@@ -190,9 +190,9 @@ const Navbar = () => {
                             spy={true}
                             to="How to Subscribe"
                             smooth={true}
-                            offset={-60}
+                            offset={-50}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
-                            duration={500}>
+                            duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Subscribe</Typography>
                         </Scroll.Link>
                         <Scroll.Link
@@ -200,9 +200,9 @@ const Navbar = () => {
                             spy={true}
                             to="Be Unstoppable"
                             smooth={true}
-                            offset={-60}
+                            offset={-50}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
-                            duration={500}>
+                            duration={600}>
                             <Typography varient="h5" className={classes.navLinks} align="center" onClick={() => setMButton(false)}>Be Unstoppable</Typography>
                         </Scroll.Link>
                     </Grid>
