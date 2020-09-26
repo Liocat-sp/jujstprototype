@@ -180,7 +180,8 @@ const Navbar = () => {
                             spy={true}
                             to="Content"
                             smooth={true}
-                            offset={-20}
+                            offset={60}
+                            isDynamic={true}
                             duration={600}
                             style={{ padding: "2px 10px", margin: "1rem 0" }}
                         >
